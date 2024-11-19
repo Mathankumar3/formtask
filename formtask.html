@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr,td{
+            border: 2px,solid black;
+            margin: 15px;
+            padding: 10px;
+        }
+        th{
+            border: 2px,solid black;
+            margin: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <button type="submit">Welcome</button> -->
+    <form id="form">    <!-- action will have url -->
+        <label for="">First Name</label><br>
+        <input type="text" placeholder="First Name"><br>
+        <label for="">Last Name</label><br>
+        <input type="text" placeholder="Last Name"><br>
+        <label for="">Email</label><br>
+        <input type="email" placeholder="E-mail" ><br>
+        <label for="">Pin</label><br>
+        <input type="number" placeholder="Pin"><br>
+
+        <legend>Choose your gender:</legend>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female"><br>
+        
+        <legend>Choice of Food:(must choose at least 2 out of 5 options)</legend>
+        <input type="checkbox" id="food1" name="food1" value="North indian">
+        <label for="food1"> North indian</label><br>
+        <input type="checkbox" id="food2" name="food2" value="South indian">
+        <label for="food2"> South indian</label><br>
+        <input type="checkbox" id="food3" name="food3" value="Chinese">
+        <label for="food3"> Chinese</label><br>
+        <input type="checkbox" id="food4" name="food4" value="Japanese">
+        <label for="food4"> Japanese</label><br>
+        <input type="checkbox" id="food5" name="food5" value="Sea food">
+        <label for="food5"> Sea food</label><br><br>
+
+        <label for="">State</label><br>
+        <input type="text" placeholder="State"><br>
+        <label for="">Country</label><br>
+        <input type="text" placeholder="Country"><br>
+        
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <p class="err-msg"></p>
+
+    <div class="user-data">
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Pin</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </table>
+    </div>
+
+   
+</body>
+
+<script src="formtask.js"></script>
+</html>
